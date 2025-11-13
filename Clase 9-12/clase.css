@@ -1,0 +1,58 @@
+#pdf
+{
+    float: right;
+    width: 85%;
+    height:100%;
+}
+#Cuprins{
+    float: left;
+    position: absolute;
+    margin-left: 2.5%;
+    background-color:rgb(165, 125, 89);
+    color: white;
+    font-family: 'Times New Roman', Times, serif; 
+    font-size: x-large; 
+    text-shadow: 3px 3px 4px rgb(38, 38, 38), 
+            -3px -3px 4px rgb(38, 38, 38), 
+            3px -3px 4px rgb(38, 38, 38), 
+            -3px 3px 4px rgb(38, 38, 38);
+    border: 2px solid white; /* White border */
+    border-radius: 20px;
+}
+.al button
+{
+    float: left;
+    width: 15%;
+    background-color:rgb(150, 97, 52);
+    color: white;
+    font-family: 'Times New Roman', Times, serif; 
+    font-size: medium; 
+ text-shadow: 3px 3px 4px rgb(38, 38, 38), 
+            -3px -3px 4px rgb(38, 38, 38), 
+            3px -3px 4px rgb(38, 38, 38), 
+            -3px 3px 4px rgb(38, 38, 38);
+    border:rgb(38, 38, 38);
+    border-radius: 10px;
+    margin-top: 5px;
+}
+.butonstil{
+    margin-top: 17px;
+}
+.butonstilcapitole{
+    margin-top: 17px !important;
+    cursor: pointer !important;
+}
+.butonstilcapitole1{cursor: pointer;}
+.butonstilcapitole:hover{
+    background-color: rgb(224, 136, 42) !important;
+}
+#butoaneI{display: none;}#butoaneII{display: none;}#butoaneIII{display: none;}#butoaneIV{display: none;}#butoaneV{display: none;} #butoaneVI{display: none;}#butoaneVII{display: none;}#butoaneVIII{display: none;}#butoaneX{display: none;}#butoaneXII{display: none;}#butoaneXIII{display: none;}#butoaneXX{display: none;}#butoaneXXI{display: none;}#butoaneXXII{display: none;}#butoaneXXIII{display: none;}#butoaneXXIV{display: none;}#butoaneXXV{display: none;}#butoaneXXVI{display: none;}#butoaneXXVII{display: none;}#butoaneXVIII{display: none;}#butoaneXXX{display: none;}#butoaneXXXI{display: none;}#butoaneIII{display: none;}#butoaneIV{display: none;}#butoaneV{display: none;}
+.butonstil{
+    background-color:rgb(138, 104, 74) !important;
+    float: right !important;
+    cursor: pointer;
+    width: 12.5% !important;
+}
+.butonstil:hover{
+    background-color: rgb(124, 120, 87) !important;
+}

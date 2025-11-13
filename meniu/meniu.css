@@ -1,0 +1,179 @@
+body{
+    margin:0px;
+    background-color: rgb(38, 38, 38);
+}
+h2{
+    color: rgb(237, 193, 158);
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    margin-left: 22px;
+    text-align: left;
+    text-shadow: 3px 3px 4px rgb(38, 38, 38), 
+                -3px -3px 4px rgb(38, 38, 38), 
+                3px -3px 4px rgb(38, 38, 38), 
+                -3px 3px 4px rgb(38, 38, 38);
+    margin-top: 10px;
+    cursor: pointer;
+    font-family: "Poppins", sans-serif;
+}
+
+.meniul{
+    position: relative; /* or absolute, fixed, or sticky */
+    z-index: 9999; 
+}
+.meniul a:hover{
+    background-color: rgba(80, 76, 76, 0.664);
+    color: rgb(77, 168, 168);
+    transition: all 0.2 ease-out;
+}
+.lecti button{
+    background: none;
+    font-size: large; 
+    color: white;
+    padding:15px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Times New Roman', Times, serif; 
+    text-shadow: 3px 3px 4px rgb(38, 38, 38), 
+                -3px -3px 4px rgb(38, 38, 38), 
+                3px -3px 4px rgb(38, 38, 38), 
+                -3px 3px 4px rgb(38, 38, 38);
+}
+
+.lecti .clasele{
+    display: none;
+    position: absolute;
+    background-color: rgb(168, 101, 45);;
+    min-width: 100px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.226);
+}
+.lecti:hover .clasele{
+    display: block;
+    text-align: center;
+}
+.lecti .clasele:hover{
+    background-color: rgb(168, 101, 45);
+}
+.lecti:hover button{
+    background-color: rgba(80, 76, 76, 0.664);
+    color: rgb(77, 168, 168);
+    transition: all 0.2 ease-out;
+}
+.intrebare{
+    background: none;
+    text-shadow: 3px 3px 4px rgb(38, 38, 38), 
+                -3px -3px 4px rgb(38, 38, 38), 
+                3px -3px 4px rgb(38, 38, 38), 
+                -3px 3px 4px rgb(38, 38, 38);
+    font-family: 'Times New Roman', Times, serif; 
+    color: white;
+    padding:15px;
+    border: none;
+}
+.meniul ul{
+    justify-content: space-between;
+    
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+    display: flex;
+    
+}
+.meniul a{
+    margin-left: min(10px, 1vw) not(clasele);
+    margin-right: min(10px, 1vw) not(clasele);
+    color: white;
+    text-decoration: none;
+    display: block;
+    text-align: right not(clasele);
+    padding: 15px;
+    cursor: pointer;
+}
+.meniul {
+    background-image: url('antique-book-shelf-vintage-background.png');
+    background-size: 5cm 100%;
+    background-position: center center;  
+    background-repeat: repeat-x;
+}
+
+.meniu {
+    font-size: larger; 
+    display: flex;
+    
+    text-shadow: 3px 3px 4px rgb(38, 38, 38), 
+                -3px -3px 4px rgb(38, 38, 38), 
+                3px -3px 4px rgb(38, 38, 38), 
+                -3px 3px 4px rgb(38, 38, 38);
+}
+span {
+    line-height: 8px;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+span:last-child {
+    padding-bottom: 5px;
+}
+.meniu-on .linie{
+    width: 25px;
+    height: 3px;
+    margin: 3px auto;
+    transition:all 0.3s ease-in-out;
+    background-color: whitesmoke;
+}
+.meniu-on{
+    width: 40px;
+    height: 40px;
+    border: 2px solid #777;
+    border-radius: 5px;
+    flex-direction: column;
+    justify-content: right;
+    display: none;
+    z-index: 3;
+    transition:all 0.3s ease-in-out;
+    background-color: whitesmoke;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 500px) {
+    .meniu-on{
+        display: flex;
+    }
+    .meniu{
+        display: none;
+        grid-template-columns: auto;
+        background-color: rgba(0, 0, 0, 0.7);
+        margin: 0px;
+        width: 100%;
+        position: absolute;
+        top: 40px;
+        transition: all 0.5s ease;
+        
+    }
+    .meniu a{
+        margin-left: -15px;
+        text-align: center;
+        line-height: 30px;
+        width: 100%;
+        display: table;
+    }
+    .lecti{
+        text-align: center;
+        display: grid;
+    }
+    .lecti .clasele{
+        background-color: rgba(0, 0, 0, 0.7);
+        display: none;
+        position:static;
+    }
+    .lecti:hover .clasele{
+        display: block;
+    }
+    .lecti .clasele:hover{
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+    h2{
+        margin-left: 35px;
+    }
+}

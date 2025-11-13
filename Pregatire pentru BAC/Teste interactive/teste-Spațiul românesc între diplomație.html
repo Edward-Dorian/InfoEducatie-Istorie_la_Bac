@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="/Pregatire pentru BAC/examen.css">
+    <script defer src="teste-Spațiul românesc între diplomație.js"></script>
+</head>
+<body>
+    <style>
+        .test
+        {
+            width: 90%;
+            max-width: 1200px;
+            margin: 100px auto 0;
+            border-radius: 10px;
+            padding: 30px;
+            background-color: #4473bea8;
+         }
+        #continua {
+            position: relative;
+            background: #15428b;
+            color: white;
+            font-weight: 500;
+            width: 150px;
+            border: 0;
+            padding: 10px;
+            margin: 20px auto 0;
+            border-radius: 4px;
+            cursor: pointer;
+            display: none;
+            border-radius: 15px;
+
+        }
+        #continua:after {
+            position: absolute;
+            content: '';
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 100%;
+            transition: all .50s;
+            border-radius: 15px;
+            background-color: rgb(34, 136, 136);
+        }
+        
+        #continua:hover {
+            color: rgb(255, 255, 255);
+        }
+        #continua:hover:after {
+            width: 100%;
+        }
+        .raspuns1 {
+            text-align: left;
+            font-size: 1rem;
+            padding: 8px 20px;
+            border: 1px solid black;
+            border-radius: 15px;
+            margin: 10px 0;
+            cursor: pointer;
+            position: relative;
+            transition: all .35s;
+            outline: none;
+            background-color: whitesmoke;
+            
+            font-size: 500;
+            width: 100%;
+        }
+        .raspuns1 a{
+            position: relative;
+            z-index: 99;
+            color: #000000;
+            font-family: "Poppins", sans-serif;
+            font-weight: 600;
+            font-size: 20px;
+        }
+        #intrebare{font-family: "Poppins", sans-serif;}
+        .raspuns2:after {
+            position: absolute;
+            content: '';
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 100%;
+            transition: all .50s;
+            border-radius: 15px;
+            background-color: rgb(34, 136, 136);
+        }
+        
+        .raspuns2:hover a{
+            color: rgb(255, 255, 255);
+        }
+        .raspuns2:hover:after {
+            width: 100%;
+        }
+        .correct {
+            background-color: #9aeabc;
+        }
+        .incorrect {
+            background-color: #ff9393;
+        }
+    </style>
+    <div class="testul">
+        <h1>Autonomii locale și instituții centrale in spațiul românesc (secolele IX-XVIII)</h1>
+        <div class="test">
+            <h2 id="intrebare">Intrebare:</h2>
+            <div id="butoaneRaspuns">
+                <button class="raspuns1" id="raspuns1" class="raspuns2"><a></a</button>
+                <button class="raspuns1" id="raspuns2" class="raspuns2"><a></a></button>
+                <button class="raspuns1" id="raspuns3" class="raspuns2"><a></a></button>
+            </div>
+            <button id="continua" style="display: none;"></button>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,323 @@
+
+body{
+    background-color: rgb(74, 78, 82);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7), 
+                 -1px -1px 2px rgba(0, 0, 0, 0.7), 
+                 1px -1px 2px rgba(0, 0, 0, 0.7), 
+                 -1px 1px 2px rgba(0, 0, 0, 0.7);
+}
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: xx-large;
+}
+#imag{
+    float: right;
+    width: 100%;
+    max-width: 650px;
+}
+.buton{
+    font-size: x-large;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 50px;
+    display: none;
+}
+@keyframes slideInFromBelow {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+@keyframes slideOutToBelow {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+}   
+.slectieclase {
+    text-align: center;
+    margin-top: 0.9rem;
+    cursor: pointer;
+    width: 250px;
+    position: relative;
+    transition: all .35s;
+    background-color: rgb(55, 106, 112);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    margin-left: 50px;
+    align-items: center;
+    
+}
+
+.slectieclase{
+    display: none;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7), 
+                 -1px -1px 2px rgba(0, 0, 0, 0.7), 
+                 1px -1px 2px rgba(0, 0, 0, 0.7), 
+                 -1px 1px 2px rgba(0, 0, 0, 0.7);
+}
+
+.slectieclase v{
+    position: relative;
+    z-index: 2;
+}
+
+.slectieclase:after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    
+    transition: all .50s;
+    background-color: rgb(34, 136, 136);
+    border-radius: 20px;
+}
+.slectieclase:hover{
+    color: rgb(255, 217, 0);
+    
+}
+.slectieclase:hover:after{
+    width: 100%;
+    left: auto;
+    right: 0;
+}
+ 
+.clase button {
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7), 
+                 -1px -1px 2px rgba(0, 0, 0, 0.7), 
+                 1px -1px 2px rgba(0, 0, 0, 0.7), 
+                 -1px 1px 2px rgba(0, 0, 0, 0.7);
+    text-align: center;
+    margin-top: 2rem;
+    border:none;
+    cursor: pointer;
+    width: 200px;
+    position: relative;
+    transition: all .35s;
+    background-color: #385eaa;
+    border-radius: 20px;
+}
+.clase button b{
+    position: relative;
+    z-index: 2;
+    color: whitesmoke;
+    font-size: x-large;
+}
+.clase button:after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    
+    transition: all .50s;
+    background-color: #6a8fd8;
+    border-radius: 20px;
+}
+.clase a{
+    
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: x-large;
+}
+.clase button:hover{
+    color: rgb(255, 255, 255);
+}
+.clase button:hover:after{
+    width: 100%;
+    left: auto;
+    right: 0;
+}
+.tst {
+    text-align: center;
+    margin-top: 2rem;
+    cursor: pointer;
+    width: 300px;
+    position: relative;
+    transition: all .35s;
+    background-color: rgb(139, 139, 36);
+    border-radius: 20px;
+}
+.tst a{
+    position: relative;
+    z-index: 2;
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: x-large;
+    font-weight: bold;
+}
+.tst:after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    
+    transition: all .50s;
+    background-color: rgb(100, 136, 34);
+    border-radius: 20px;
+}
+.tst:hover{
+    color: rgb(255, 255, 255);
+}
+.tst:hover:after{
+    width: 100%;
+    left: auto;
+    right: 0;
+}
+
+
+.butonintrebat {
+    text-align: center;
+    margin-top: 2rem;
+    cursor: pointer;
+    width: 300px;
+    position: relative;
+    transition: all .35s;
+    background-color: rgb(136, 34, 34);
+    border-radius: 20px;
+}
+.butonintrebat a{
+    position: relative;
+    z-index: 2;
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: x-large;
+    font-weight: bold;
+}
+.butonintrebat:after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    
+    transition: all .50s;
+    background-color: dd7973;
+    border-radius: 20px;
+}
+.butonintrebat:hover{
+    color: rgb(255, 255, 255);
+}
+.butonintrebat:hover:after{
+    width: 100%;
+    left: auto;
+    right: 0;
+}
+.scris1{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-self:center;
+    width: 80%;
+    margin:0% auto;
+    height: 90vh;
+    background-color: rgb(74, 78, 82);
+}
+.scris2{
+    justify-content: start;
+    width: 80%;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7), 
+                 -1px -1px 2px rgba(0, 0, 0, 0.7), 
+                 1px -1px 2px rgba(0, 0, 0, 0.7), 
+                 -1px 1px 2px rgba(0, 0, 0, 0.7);
+}
+.scris2 h1{
+    font-size: 2rem;
+}
+.scris2 p{
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    margin-left: -20%;
+}
+.animatie {
+    font-size: 1rem;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 4px;
+    margin-top: 2rem;
+    cursor: pointer;
+    position: relative;
+    transition: all .35s;
+    outline:none;
+    background-image: url('/images/Screenshot 2024-05-14 025207.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: gold;
+}
+.animatie b{
+    position: relative;
+    z-index: 2;
+
+}
+.animatie:after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    transition: all .50s;
+    border-radius: 4px;
+    background-color: rgb(34, 136, 136);
+}
+.animatie:hover{
+    color: rgb(255, 255, 255);
+}
+.animatie:hover:after{
+    width: 100%;
+}
+.imagine{
+    text-align: center;
+    height: 80%;
+}
+@media screen and (max-width:850px) {
+    .clase {
+        width: 20%;
+        margin-top: -2rem;
+    }
+    .scris1{
+        text-align: center; 
+        display: grid;
+         grid-template-columns:auto;
+         align-items: center;
+         justify-self:center;
+         width: 90%;
+         margin:0% auto;
+         height: 90vh;
+         background-color: rgb(74, 78, 82);
+ 
+    }
+    .scris2{
+        text-align: center;
+        justify-content: center;
+        width: 100%;
+    }
+    .scris2 h1{
+        font-size: 2.5rem;
+    }
+    .scris2 p{
+        margin-top: 1rem;
+        font-size: 1.5rem;
+        margin-left: 0% !important;
+    }
+    #imag {
+        display: none;
+    }
+
+}

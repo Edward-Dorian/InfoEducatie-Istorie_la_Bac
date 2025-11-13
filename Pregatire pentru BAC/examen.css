@@ -1,0 +1,133 @@
+:root {
+    --text-color: #FFFFFF;
+    --icon-color: #ACACBE;
+    --icon-hover-bg: #5b5e71;
+    --background: #444654;
+  }
+  .light-mode {
+    --text-color: #23242c;
+    --icon-color: #ebebeb;
+    --icon-hover-bg: #a2a2ac;
+    --background: rgb(196, 196, 196);
+  }
+  .meniu__slider{
+    background-color: var(--background);
+}
+  .icon:hover {
+    background: var(--icon-hover-bg);
+  }
+  .icon {
+    user-select: none;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .icon {
+  display: none;
+}
+.icon {
+  margin-left: 7px;
+  font-size: 1.4rem;
+  background: var(--incoming-chat-bg);
+  outline: 1px solid var(--incoming-chat-border);
+}
+.icon:hover {
+  background: var(--icon-hover-bg);
+}
+body{
+    background-color: var(--background);
+    color: var(--text-color);
+    font-size:calc(17px + 0.5vw);
+
+}
+h2{
+  background-color: #4e69a0;
+}
+img{
+    width: 100%; height: auto; max-width: 1200px;
+    display: block;
+    margin: 0 auto; 
+}
+.meniu__wrapper {
+    min-height: 400px;
+    position: relative;
+    text-align: center;
+  }
+  .meniu {
+    height: 100%;
+    width: 300px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .meniu__button {
+    width: 40px;
+    height: 40px;
+    border: 2px solid #777;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    z-index: 3;
+  }
+a{
+  text-decoration: none;
+  color: var(--text-color);
+}
+  
+  .meniu__button span {
+    line-height: 8px;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 400;
+  }
+  
+  .meniu__button span:last-child {
+    padding-bottom: 5px;
+  }
+  
+  .meniu__wrapper input[type='checkbox'] {
+    width: 40px;
+    height: 40px;
+    outline: 3px solid red;
+    opacity: 0;
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    z-index: 4;
+    cursor: pointer;
+  }
+  
+  .meniu__wrapper input:checked ~ .meniu__button {
+    background: #d2f2fc;
+  }
+  
+  .meniu__wrapper input:checked ~ .meniu__slider {
+    transform: none;
+  }
+  
+  .meniu__slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 100%;
+    z-index: 2;
+    transform: translateX(-310px);
+    transition: transform 0.3s;
+    text-align: left;
+  }
+  
+  .meniu__item {
+    padding: 10px 0 10px 10px;
+  }
+  
+  .meniu__item:hover {
+    background-color: #d2f2fc;
+  }
+  
+  .meniu__item:first-of-type {
+    margin-top: 60px;
+  }

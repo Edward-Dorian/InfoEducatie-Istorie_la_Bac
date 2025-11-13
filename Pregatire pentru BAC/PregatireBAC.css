@@ -1,0 +1,191 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+body {
+    min-height: 100vh; /* 100% of the viewport height */
+    background-image: url('../images/classroom.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+main{
+    margin-left: 0px;
+    margin-right: 0px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+
+    
+}
+
+/* culoare pt butoane #4e69a0* si hover #80669d/*/
+
+.butoncentru {
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    max-width: 1300px;
+    margin: 0 auto;
+    padding-top: 20px;
+    
+    border: none;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; 
+    width: 100%;
+    
+
+}
+
+.but{
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: x-large;
+    font-weight: bold;
+    transition: all .35s;
+    height: 50px;
+    background-color: #4e69a0;
+    border-radius: 20px;
+}
+.but b{
+    margin: 20px;
+    position: relative;
+    z-index: 2;
+    color: whitesmoke;
+    text-decoration: none;
+
+    font-weight: bold;
+}
+.but:after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    transition: all .50s;
+    background-color: #6e647a;
+    border-radius: 20px;
+}
+.but:hover{
+    color: rgb(255, 255, 255);
+}
+.but:hover:after{
+    width: 100%;
+}
+h1 {
+    position: absolute;
+    width: 80%;
+    bottom: 60%;
+    left: 50%; 
+    transform: translateX(-50%);
+    color: whitesmoke;
+    z-index: 1;
+    text-shadow: 10px 10px 12px rgba(0, 0, 0, 0.7), 
+                 -10px -10px 12px rgba(0, 0, 0, 0.7), 
+                 10px -10px 12px rgba(0, 0, 0, 0.7), 
+                 -10px 15px 12px rgba(0, 0, 0, 0.7),
+                 0px 0px 60px rgba(0, 0, 0, 0.9),
+        0px 0px 80px rgba(0, 0, 0, 0.9);
+}
+text{
+    position: absolute;
+    max-width: 1300px;
+    width: 80%;
+    top: 60%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    border-top-left-radius: 20%;
+    border-top-right-radius: 20%;
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+    
+    color: whitesmoke;
+    background-color: rgb(74, 78, 82);
+    font-family: "Poppins", sans-serif;
+}
+text h3{
+    font-size: 28px;
+}
+
+text a{
+    font-size: 22px;
+    cursor:pointer;
+    text-decoration: none;
+    color: whitesmoke;
+    text-decoration: none;
+
+}
+a:hover{
+    color: #819fdb;
+    
+}
+iframe {
+
+    left: 5%;
+    bottom: 2%;
+    top: 5%;
+    display: none;
+    z-index: 999999;
+    position: absolute;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    width: 90% ; height: 100%;
+    
+  }
+#inchisIframe{
+    position:absolute; 
+    display: none; 
+    float:right;
+    top: 5%;
+    right: 5%; 
+    z-index: 9999999999999;
+}
+#inchisIframe{
+    color: #ff0000;
+    cursor: pointer;
+    width: auto + 10px;
+    font-weight: 900;
+    font-size: xx-large;
+    font-family: Arial, sans-serif;
+}
+#inchisIframe:hover{
+    background-color: rgb(112, 108, 108);
+}
+@media screen and (max-width:824px){
+    .butoncentru {
+        width: 100%;
+        transform: none; 
+        top: 40%;
+        left: auto;
+        
+
+    }
+    .but{
+        font-size: large;
+        height: 35px;
+    }
+    .but b{
+        margin: 0px;
+    }
+    text{
+    width: 100%;
+    }
+    iframe {
+        left: 0%;
+        bottom: 0%;
+        top: 0%;bottom: 0%;
+        width: 100% ;
+    
+      }
+      #inchisIframe{
+        top: 0%;
+    right: 0%; 
+      }
+};
